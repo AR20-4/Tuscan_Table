@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(assets/img/TTlandingpage\ copy\ 2.jpg);
+    background: url(../img/TTlandingpage\ copy\ 2.jpg);
     background-size: cover; 
 }
 
@@ -309,7 +309,7 @@ margin-left: 8px;
 
 
 .reviews{
-    background: url(/assets/img/pexels-fauxels-3184183.jpg);
+    background: url(../img/pexels-fauxels-3184183.jpg);
     background-size: cover;
     background-color: lightblue;
 }
