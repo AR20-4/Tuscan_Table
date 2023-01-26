@@ -27,7 +27,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(assets/img/TTlandingpage\ copy\ 2.jpg);
+    background-image: url("assets/img/TTlandingpage\ copy\ 2.jpg");
     background-size: cover; 
 }
 
@@ -309,7 +309,7 @@ margin-left: 8px;
 
 
 .reviews{
-    background-image: url(assets/img/pexels-fauxels-3184183.jpg);
+    background-image: url("assets/img/pexels-fauxels-3184183.jpg");
     background-size: cover;
     background-color: lightblue;
 }
@@ -493,7 +493,7 @@ margin-left: 8px;
         cursor: pointer;
     }
     .menuToggle.active{
-        background: url(close.png);
+        background: url("close.png");
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
