@@ -1,254 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuscan Table Ristorante</title>
- <!--========== BOX ICONS ==========-->
- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
- 
- <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tuscan Table Ristorante</title>
+        <!--========== BOX ICONS ==========-->
 
- <!--========== SCROLL TOP
-      <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>
-    ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-  <!--========== HEADER ==========-->
-    <header>
-       <a href="#" class="logo">The Tuscan Table </a>
-       <div class="menuToggle" onclick="toggleMenu();"></div>
-       <ul class="navigation">
-           <li><a href="#banner">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li><a href="#menu">Menu</a></li>
-           <li><a href="#team">Team</a></li>
-           <li><a href="#reviews">Reviews</a></li>
-           <li><a href="#contact">Contact</a></li>
-       </ul>
-    </header>
-  
-    <section class="banner" id="banner">
-         <div class="content">
-         </div>
-    </section>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
 
-     <section class="hours" id="hours">
-        <div class="content">
-            <div class="row_hours">
-                <div class="col50">
-                    <h2 class="titleText"><span>H</span>ours</h2>
-                    <p> <strong>M/F</strong> 5PM-10PM
-                        <br><b>S/S</b>  3PM-11PM
-                    </p>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">The Tuscan Table</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Our Story</a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                        <li class="nav__item"><a href="#Market" class="nav__link">Market</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">Reserve a Table</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
                 </div>
-                <div class="col50">
-                    <h2 class="titleText"><span>V</span>isit Us</h2>
-                    <p>275 Center St
-                        <br> Greenfield, IN 46140
-                    </p>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
-                <div class="col50">
-                    <h2 class="titleText"><span>C</span>all Us</h2>
-                    <p>319.561.2866    
-                    </p>
-            </div>
-        </div>
-    </section>
-   
-     <section class="about" id="about">
-        <div class="row">
-        <div class="col50">
-            <h2 class="titleText"><span>A</span>bout Us</h2>
-            <p> Here at the Tuscan Table Ristorante Chef Tony Lepore delivers classic Sicilian flavors with a rustic and elegant flare.
-                <br><br>Sophisticated elevated menu in a casual environment.  Using made by scratch techinques with classical culinary training 
-            Chef Tony brings to light family reciepes that have been passed down for generations.</p> 
-            From our table to yours. Food is Love.
-        </div>
+            </nav>
+        </header>
 
-        <div class="col50">
-            <div class="imgBx">
-                <img src="assets/img/pastaaboutpic.png">
-            </div>
-        </div>
-    </div>
-   </section>
-
-
-
-   <section class="menu" id="menu">
-       <div class="title">
-        <h2 class="titleText">Our <span>M</span>enu</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-       </div>
-       <div class="content">
-           <div class="box">
-               <div class="imgBx">
-                   <img src="assets/img/pexels-rene-asmussen-2977514.jpg">
-               </div>
-               <div class="text">
-                   <h3>Special Salads</h3>
-               </div>
-            </div>
-               <div class="box">
-                <div class="imgBx">
-                    <img src="assets/img/pexels-chevanon-photography-323682.jpg">
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+               
+                    <img src="assets/img/tuscantable-white-trans-08 copy.png" alt="" class="home__img">
                 </div>
-                <div class="text">
-                    <h3>Special Salads</h3>
-                </div>
-            </div>
-                <div class="box">
-                    <div class="imgBx">
-                        <img src="assets/img/pexels-snapwire-675951.jpg">
+            </section>
+
+            
+            <!--========== ABOUT/Our Story ==========-->
+            <section class="about section bd-container" id="about">
+               
+                <span class="section-subtitle about__initial">The Story of Us</span>
+                <div class="about__container  bd-grid">
+                    <div class="about__data">
+                        
+                        <h2 class="section-title about__initial">Meet The Chef <br> Tony Lepore  </h2>
+
+                        <img src="assets/img/ChefTonyandfam.png" alt="" class="about__img_main">
+
+                        <p class="about__description"> Here at the Tuscan Table Ristorante Chef Tony Lepore delivers classic Sicilian flavors with a rustic and elegant flare.
+                            <br><br>The Tuscan table is the perfect space for any occasion, featuring a sophisticated and robust Italian menu in a warm, casual, and inviting environment. Chef Tony’s dishes are prepared with love. Using traditional techniques for making pasta from scratch and combining classical culinary training, Chef Tony brings to light family recipes that have been passed down for generations.</p> 
+                            <br><b>
+
+                            <italics>Dalla nostra tavola alla tua</italics> // From our table to yours.
+                             </p>   
+
+                    <div>
+                        <a href="https://www.greenfieldreporter.com/2023/03/24/italian-eatery-planned-at-former-photon-site/#" class="button">Explore More</a>
                     </div>
-                    <div class="text">
-                        <h3>Special Salads</h3>
+            </div>
+
+            <div class="about_pic">
+                <img src="assets/img/pastahome.jpg" alt="" class="about__img">
+            </div>
+
+            </div>
+            </section>
+
+            <!--========== MENU ==========-->
+            <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">To Eat</span>
+                <h2 class="section-title">Summer Menu 2023</h2>
+
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        
+                    </div>
+
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        
                     </div>
                 </div>
-           <div class="box">
-            <div class="imgBx">
-                <img src="assets/img/pexels-dana-tentis-262959.jpg">
-            </div>
-            <div class="text">
-                <h3>Special Salads</h3>
-            </div>
-        </div>
-       </div>
+            </section>
 
-       <div class="title">
-           <a href="#" class="btn">View All</a>
-       </div>
-   </section>
+             <!--========== Store ==========-->
+             <section class="menu section bd-container" id="menu">
+                <span class="section-subtitle">La Piazza</span>
+                <h2 class="section-title">Market Place</h2>
 
-<section class="team" id="team">
-    <div class="title">
-        <h2 class="titleText">Meet Our<span>T</span>eam</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-       </div>
-    <div class="content">
-    <div class="box">
-        <div class="imgBx">
-            <img src="assets/img/pexels-rene-asmussen-3217156.jpg">
-        </div>
-        <div class="text">
-            <h3>Chef Tony Lepore</h3>
-        </div>
-    </div>
-    <div class="box">
-        <div class="imgBx">
-            <img src="assets/img/pexels-vaibhav-jadhav-3218467.jpg">
-        </div>
-        <div class="text">
-            <h3>Tracey Glasgow</h3>
-        </div>
-    </div>
-    <div class="box">
-        <div class="imgBx">
-            <img src="assets/img/pexels-rene-asmussen-3217157.jpg">
-        </div>
-        <div class="text">
-            <h3>Front of House</h3>
-        </div>
-    </div>
-</section>
+                <div class="menu__container bd-grid">
+                    <div class="menu__content">
+                        <img src="assets/img/plate1.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Chicken salad</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">$12.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
 
-
-<section class="reviews" id="reviews">
-    <div class="titlewhite">
-        <h2 class="titleText"><span>R</span>eviews</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-       </div>
-       <div class="content">
-           <div class="box">
-               <div class="imgBx">
-                <img src="assets/img/pexels-fauxels-3184183.jpg">
-               </div>
-               <div class="text">
-                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ad pariatur dignissimos officiis. Saepe iusto minima sunt incidunt repudiandae explicabo libero, modi molestias reprehenderit eligendi officia numquam ipsam eveniet sint.</p>
-                   <h3>Sarah P.</h3>
-               </div>
-           </div>
-           <div class="box">
-            <div class="imgBx">
-             <img src="assets/img/pexels-fauxels-3184183.jpg">
-            </div>
-            <div class="text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ad pariatur dignissimos officiis. Saepe iusto minima sunt incidunt repudiandae explicabo libero, modi molestias reprehenderit eligendi officia numquam ipsam eveniet sint.</p>
-                <h3>Sarah P.</h3>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBx">
-             <img src="assets/img/pexels-fauxels-3184183.jpg">
-            </div>
-            <div class="text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis ad pariatur dignissimos officiis. Saepe iusto minima sunt incidunt repudiandae explicabo libero, modi molestias reprehenderit eligendi officia numquam ipsam eveniet sint.</p>
-                <h3>Sarah P.</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="contact" id="contact">
-    <div class="title">
-        <h2 class="titleText"><span>C</span>ontact Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-
-    <div class="box">
-        <div class="imgBx">
-            <img src="assets/img/TTcontactpic.png">
-        </div>
-       
-    <div class="contactForm_Box">
-
-<div class="contactForm">
-    <h3>Send Message</h3>
-    <div class="inputBox">
-        <input type="text" placeholder="Name">
-    </div>
-
-    <div class="inputBox">
-        <input type="text" placeholder="Email">
-    </div>
-
-    <div class="inputBox">
-        <textarea placeholder="Message"></textarea>
-    </div>
-    <div class="inputBox">
-        <input type="submit" value="Send">
-    </div>
-</div>
-
-   
-     </div>
-    </div>
-</section>
-
-<div class="copyrightText">
-    <p>Copyright 2022 HireRachel.dev All Rights Reserved</p>
-</div>
-
-     <script type="text/javascript">
-     window.addEventListener('scroll', function(){
-         const header = document.querySelector('header');
-         header.classList.toggle("sticky", window.scrollY > 0);
-     });
-
-     function toggleMenu(){
-         const menuToggle = document.querySelector('.menuToggle');
-         const navigation = document.querySelector('.navigation');
-         menuToggle.classList.toggle('active');
-         navigation.classList.toggle('active');
-     }
-
-     </script>
+                    <div class="menu__content">
+                        <img src="assets/img/plate2.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Salad with fish</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">$12.00</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                    
+                    <div class="menu__content">
+                        <img src="assets/img/plate3.png" alt="" class="menu__img">
+                        <h3 class="menu__name">Spinach salad</h3>
+                        <span class="menu__detail">Delicious dish</span>
+                        <span class="menu__preci">$9.50</span>
+                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                    </div>
+                </div>
+            </section>
     
-</body>
+
+            <!--===== Reserve a Table =======-->
+            <section class="app section bd-container" id="services">
+                <div class="app__container bd-grid">
+                    
+                    <div class="app__data">
+                        <span class="section-subtitle app__initial">Reservations</span>
+                        <h2 class="section-title app__initial">Please fill out the form <br> below to book a table</h2>
+
+                        <div class="contactForm_Box">
+                            <div class="contactForm">
+                                <h3>Make a Reservation</h3>
+                                <form action="https://formsubmit.co/littlemadethings@gmail.com" method="POST">
+                                    <input type="hidden" name="_subject" value="New Reservation">
+                                <div class="inputBox">
+                                    <input type="text" placeholder="Name" required>
+                                </div>
+                            
+                                <div class="inputBox">
+                                    <input type="text" placeholder="How many in your party?" required>
+                                </div>
+
+                                <div class="inputBox">
+                                    <input type="text" placeholder="Reservation time" required>
+                                </div>
+
+                                <div class="inputBox">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            
+                                <div class="inputBox">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <div class="inputBox">
+                                    <button type="submit">Send</button>
+                               </div>
+                               </form>
+                            </div>
+                        </div>
+                    </div> 
+                            <div class="about_pic">
+                                <img src="assets/img/pexels-anna-guerrero-2998943 copy.jpg" alt="" class="about__img">
+                              </div> 
+                            
+                                  
+                    </div>
+            </section>
+
+              <!--========== Reviews  <input type="submit" value="Send"> ==========-->
+              <section class="services section bd-container">
+                <span class="section-subtitle">Reviews</span>
+                <h2 class="section-title">Let us give you an amazing dining experience!</h2>
+
+                <div class="services__container  bd-grid">
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                          
+                        </svg>
+                        <h3 class="services__title">Excellent food</h3>
+                        <p class="services__description">We offer our guests excellent quality ingredients that make the best and most delicious food in the city.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                           
+                            
+                        </svg>
+                        <h3 class="services__title">Great Atmosphere</h3>
+                        <p class="services__description">A warm environment with an even friendlier staff. You'll receive genuine hospitality and be treated like real family.</p>
+                    </div>
+
+                    <div class="services__content">
+                        <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
+                           
+                        </svg>
+                        <h3 class="services__title">Amazing Value</h3>
+                        <p class="services__description">Homemade classic dishes grandmothers create, filled with love, all for a reasonable price.</p>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <!--========== CONTACT US ==========-->
+            <section class="contact section bd-container" id="contact">
+                <div class="contact__container bd-grid">
+                    <div class="contact__data">
+                        <span class="section-subtitle contact__initial">Let's talk</span>
+                        <h2 class="section-title contact__initial">Contact us</h2>
+                        <p class="contact__description">If you would like to reserve a table with us or book a private event, please fill out the reservation form and we will get back to you shortly.</p>
+                    </div>
+
+                     <!--== HOURS====-->
+            <section class="hours" id="hours">
+                <div class="content">
+                    <div class="row_hours">
+                        <div class="col50">
+                            <h2 class="titleText"><span>H</span>ours</h2>
+                            <p>  By 
+                                <br><b>Reservation
+                                    <br><b>Only
+                            </p>
+                        </div>
+                        <div class="col50">
+                            <h2 class="titleText"><span>V</span>isit Us</h2>
+                            <p>275 Center St
+                                <br> Greenfield, IN 46140
+                            </p>
+                        </div>
+                        <div class="col50">
+                            <h2 class="titleText"><span>C</span>all Us</h2>
+                            <p>319.561.2866    
+                            </p>
+                    </div>
+                </div>
+            </section>
+
+                    <div class="contact__button">
+                        <a href="#" class="button">Contact us now</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">The Tuscan Table</a>
+                    <span class="footer__description">Ristorante</span>
+                    <div>
+                        <a href="https://www.facebook.com/thetuscantable" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/tuscan_table_ristorante/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#contact" class="footer__link">Catering</a></li>
+                        <li><a href="#contact" class="footer__link">Private Events</a></li>
+                        <li><a href="#menu" class="footer__link">Menu</a></li>
+                        <li><a href="#services" class="footer__link">Reserve your spot</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Reach Out</h3>
+                    <ul>
+                        <li><a href="#services" class="footer__link">Book an event</a></li>
+                        <li><a href="#contact" class="footer__link">Contact us</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact</h3>
+                    <ul>
+                        <li>The Tuscan Table</li>
+                        <li>275 Center St
+                         <br> Greenfield, IN 46140</li>
+                        <li>319.561.2866 </li>
+                        <li>Tuscantable@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2023 All right reserved. Designed By Rachel Glasgow</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
