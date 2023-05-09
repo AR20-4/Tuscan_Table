@@ -323,6 +323,11 @@ header.sticky .logo{
   width: 100%;
   display: flex;
   justify-content: space-around;
+  color: #000;
+}
+
+.contact__description{
+  color: #111;
 }
 
 .row_hours .col50 p{
