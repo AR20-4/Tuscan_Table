@@ -413,20 +413,29 @@ margin-left: 8px;
 .menu__img{
   width: 100px;
   align-self: center;
+  border-radius: .5rem;
   margin-bottom: var(--mb-2);
 }
 
-.menu__name, .menu__preci{
+.menu__name{
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
+}
+
+.menu__price{
+  font-weight: var(--font-semi-bold);
+  color: var(--text-color-alt);
 }
 
 .menu__name{
   font-size: var(--normal-font-size);
 }
 
-.menu__detail, .menu__preci{
+.menu__detail, .menu__price, .menu__name{
   font-size: var(--small-font-size);
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .menu__detail{
