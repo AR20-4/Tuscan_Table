@@ -8,9 +8,9 @@
 
   /*========== Colors ==========*/
   --first-color: #486b4e;
-  --first-color-alt:rgb(91, 110, 94);
+  --first-color-alt:#5b6e5e;
   --title-color: #393939;
-  --text-color: rgb(46, 58, 47);
+  --text-color: #2e3a2f;
   --text-color-alt: #e36f3a;
   --text-color-light:rgb(93, 95, 94);
   --body-color: #ebebeb;
@@ -72,6 +72,7 @@ body.dark-theme{
   --container-color: #27302C;
 }
 
+
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
@@ -112,7 +113,7 @@ img{
 
 /*========== CLASS CSS ==========*/
 .section{
-  padding: 4rem 0 2rem;
+  padding: 2rem 0 2rem;
 }
 
 .section-title, .section-subtitle{
@@ -272,30 +273,6 @@ header.sticky .logo{
   bottom: 1.5rem;
 }
 
-/*========== HOME ==========*/
-.home__container{
-  height: calc(100vh - var(--header-height));
-  align-content: center;
-  background-color: #486b4e;
-}
-
-.home__title{
-  font-size: var(--biggest-font-size);
-  color: var(--first-color);
-  margin-bottom: var(--mb-1);
-}
-
-.home__subtitle{
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-4);
-}
-
-.home__img{
-  width: 800px;
-  justify-self: center;
-}
-
 /*========== BUTTONS ==========*/
 .button{
   display: inline-block;
@@ -310,33 +287,47 @@ header.sticky .logo{
   background-color: var(--first-color-alt);
 }
 
-/*========== HOURS ==========*/
-
-.content{
-  padding: 22px;
-  background-color: #ebebeb;
-  margin-right: 10px;
+/*========== HOME ==========*/
+.home__container{
+  height: calc(100vh - var(--header-height));
+  align-content: center;
+  background-color: #486b4e;
 }
 
-.row_hours{
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  color: #000;
+.home__img{
+  width: 800px;
+  justify-self: center;
 }
 
-.contact__description{
-  color: #111;
+.intro_wrapper{
+  display: block;
+  min-width: 400px ;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.row_hours .col50 p{
-margin-left: 8px;
+.intro_info{
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: .8rem;
+  border: #27302C solid;
 }
 
-.row_hours .col50{
-  border: #486b4e double 5px;
-  padding: 20px;
+
+.intro_CTA{
+  justify-content: center;
+  align-items: center; 
+  margin-bottom: 2rem;
 }
 
 /*========== ABOUT ==========*/
@@ -363,40 +354,16 @@ margin-left: 8px;
   background-color: #C7D1CC;
   border-radius: .5rem;
   padding-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
-/*========== SERVICES ==========*/
-.services__container{
-  row-gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.about__description{
+  margin-bottom: 1rem;
 }
 
-.services__content{
-  text-align: center;
-  margin-top: -40px;
-}
-
-.services__img{
-  width: 64px;
-  height: 64px;
-  fill: var(--first-color);
-  margin-bottom: var(--mb-2);
-}
-.section-title{
-  font-size: large;
-  background-color: #555;
-  padding: 5px;
-  border-radius: .5rem;
-  color: #ebebeb;
-}
-.services__title{
-  font-size: var(--h3-font-size);
-  color: var(--text-color-alt);
-  margin-bottom: var(--mb-1);
-}
-
-.services__description{
-  padding: 0 1.5rem;
+.saying{
+color: #486B4E;
+margin-top: 1rem;
 }
 
 /*========== MENU ==========*/
@@ -481,31 +448,243 @@ margin-left: 8px;
   border-radius: .5rem 0 .5rem 0;
 }
 
-/*========== reviews ==========*/
-.app__data{
+/* ADDED ******* ========== PHOTO SWIPER CSS ==========*/
+.main {
+  display: block;
+  justify-content: center;
+  align-items: center; /* For the animations ScrollReveal*/
+}
+
+.container {
+  max-height: 850px;
+}
+
+
+.section {
+    padding: 4rem 1rem 2rem 1rem;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+  justify-items: center;
+  align-items: center;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-.app__description{
-  margin-bottom: var(--mb-5);
+.section__title span {
+  color: var(--text-color-alt);
 }
 
-.app__stores{
-  margin-bottom: var(--mb-4);
+.section__subtitle {
+  display: block;
+  font-size: var(--biggest-font-size);
+  color: var(--first-color);
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: 'Lusitana';
 }
 
-.app__store{
-  width: 120px;
-  margin: 0 var(--mb-1);
+
+.popular__container{
+  padding: 1rem 5rem 3rem 5rem; 
 }
 
-.app__img{
+.popular__card{
+  width: 290px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  transition: .4s;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background: #C7D1CC;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: -5;
+}
+
+.popular__img{
+  filter: opacity(75%);
+  height: 400px;
   width: 230px;
-  justify-self: center;
+  border-radius: 1rem;
+  box-shadow: 0 12px 16px hsla(152, 91%, 9%, 0.2);
 }
 
-/*========== CONTACT ==========*/
+.popular__data{
+  padding: 0 1rem 0 .5rem;
+  z-index: 5;
+}
+
+
+.popular__title{
+  font-size: var(--h2-font-size);
+  padding-top: 1rem;
+  margin-bottom: .5rem;
+  margin-top: -2rem;
+  font-family: 'Lusitana';
+}
+
+.popular__description{
+  font-size: var(--small-font-size);
+  letter-spacing: 1px;
+  padding-bottom: .5rem;
+  border: 1px solid black;
+  height: 130px;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center
+}
+
+.popular__card:hover{
+  box-shadow: 0 12px 16px hsla(228, 66%, 45%, .2);
+}
+
+.swiper__buttons{
+  margin-top: 4rem;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content: '';    
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  background-color: var(--container-color);
+  border: 2px solid var(--text-color-light);
+  padding: 6px;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev{
+  left: calc(50% - 3rem);
+}
+
+.swiper-button-next{
+  right: calc(50% - 3rem);
+}
+
+/*=============== QUESTIONS ===============*/
+.questions{
+  background: radial-gradient(circle at bottom left,transparent 25%,#acbbae 25.5%, #acbbae 36%, transparent 37%, transparent 100%),radial-gradient(circle at top right,transparent 34%,#acbbae 34.5%, #acbbae 45.5%, transparent 46%, transparent 100%);
+        background-size: 6em 6em;
+        background-color:   #486B4E;
+        opacity: 1
+}
+
+.questions__container{
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.questions__title{
+  color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #5b6e5e;
+}
+
+.questions__group{
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.questions__item{
+  background-color: var(--container-color);
+  border-radius: .25rem;
+}
+
+.questions__item-title{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.questions__icon{
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.questions__description{
+  font-size: var(--smaller-font-size);
+  padding: 0 1.25rem 1.25rem 2.5rem;
+}
+
+.questions__header{
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  padding: .75rem .5rem;
+  cursor: pointer;
+}
+
+.questions__content{
+  overflow: hidden;
+  height: 0;
+}
+
+.questions__item,
+.questions__header,
+.questions__item-title,
+.questions__icon,
+.questions__description,
+.questions__content{
+  transition: .3s;
+}
+
+.questions__item:hover{
+  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
+}
+
+/*Rotate icon, change color of titles and background*/
+.accordion-open .questions__header,
+.accordion-open .questions__content{
+  background-color: var(--first-color);
+}
+
+.accordion-open .questions__item-title,
+.accordion-open .questions__description,
+.accordion-open .questions__icon{
+  color: #FFF;
+}
+
+.accordion-open .questions__icon{
+  transform: rotate(45deg);
+}
+
+
+/*========== RESERVATIONS/ contact ==========*/
+.app__container{
+display: block;
+justify-content: center;
+align-items: center;
+}
+
+.app__data{
+  text-align: left;
+}
 .contact__container{
+  display: block;
+justify-content: center;
+align-items: center;
   text-align: center;
 }
 
@@ -520,8 +699,9 @@ margin-left: 8px;
 }
 
 .contact .contactForm_Box{
-  display: flex;
+  display: block;
   justify-content: center;
+  align-items: center;
 }
 
 .contactForm{
@@ -572,6 +752,128 @@ margin-left: 8px;
   cursor: pointer;
 }
 
+
+
+.res__description_wrapper{
+  background: radial-gradient(circle, #cdd7ce 10%, transparent 11%),radial-gradient(circle at bottom left, #cdd7ce 5%, transparent 6%),radial-gradient(circle at bottom right, #cdd7ce 5%, transparent 6%),radial-gradient(circle at top left, #cdd7ce 5%, transparent 6%),radial-gradient(circle at top right, #cdd7ce 5%, transparent 6%);
+        background-size: 1em 1em;
+        background-color: #eeeeee;
+        margin-top: 2rem;
+        padding: .5rem;
+        text-align: center;
+      
+}
+
+
+.contact__img{
+  width: 80%;
+  border-radius: .5rem;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+
+.contact_pic{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C7D1CC;
+  border-radius: .5rem;
+  padding-bottom: 20px;
+  margin-bottom: 4rem;
+}
+
+/*========== Reviews and news ==========*/
+.services__container{
+  row-gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.services__content{
+  text-align: center;
+}
+
+
+.section-title{
+  font-size: large;
+  background-color: #555;
+  padding: 5px;
+  border-radius: .5rem;
+  color: #ebebeb;
+}
+.services__title{
+  font-size: var(--h3-font-size);
+  color: var(--text-color-alt);
+  margin-bottom: var(--mb-1);
+}
+
+.services__description{
+  padding: 0 1.5rem;
+}
+
+.news_title{
+  margin-top: 1.5rem;
+}
+
+.news__wrapper{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.news__buttons{
+  margin-top: 1rem;
+}
+
+.chat__img{
+  width: 100%;
+  border-radius: .5rem;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+
+.chat_pic{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #C7D1CC;
+  border-radius: .5rem;
+  padding-bottom: 20px;
+  margin-bottom: 3rem;
+}
+
+
+/*========== HOURS ==========*/
+
+.content{
+  padding: 22px;
+  background-color: #ebebeb;
+  margin-bottom: 2rem;
+}
+
+.row_hours{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+}
+
+.contact__description{
+  color: #111;
+}
+
+.row_hours .col50 p{
+margin-left: 8px;
+}
+
+.row_hours .col50{
+  border: #486b4e double 5px;
+  padding: 20px;
+}
+
 /*========== FOOTER ==========*/
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -598,7 +900,7 @@ margin-left: 8px;
 
 .footer__title{
   font-size: var(--h2-font-size);
-  color: var(--title-color);
+  color: var(--text-color-alt);
   margin-bottom: var(--mb-2);
 }
 
@@ -653,7 +955,14 @@ margin-left: 8px;
 
 .about__img{
   margin-top: -60px;
+}
 
+.saying{
+  border: 1px solid var(--text-color);
+  padding: 5px;
+  border-radius: 1rem;
+  text-wrap: nowrap;
+  margin-top: 1rem;
 }
 
   .about__img, .app__img{
@@ -732,6 +1041,13 @@ margin-left: 8px;
   .about_pic{
     padding-top: 80px;
   }
+.question__wrapper{
+  display: flex;
+}
+
+.contact_pic{
+  margin-right: 2rem;
+}
 }
 
 @media screen and (min-width: 960px){
@@ -740,12 +1056,39 @@ margin-left: 8px;
     margin-right: auto;
   }
 
+  .about__img{
+    margin-top: 2rem;
+  }
+  
+  .about_ma{
+      display: flex;
+  }
+  
+  .about__description{
+    flex: 40%;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .about__chef{
+    display: flex;
+  }
+  .saying{
+    margin-left: 17rem;
+  }
+
   .home__img{
     width: 500px;
   }
 
-  .about__container,
   .app__container{
     column-gap: 7rem;
   }
+  .res__description_wrapper{
+    min-width: 500px;
+  }
+  .chat__img{
+    max-width: 800px;
+  }
 }
+
